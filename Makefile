@@ -1,8 +1,8 @@
 AutomatedMakefile = am
 CC = g++
 
-FILES = 
-EXECUTABLE = 
+FILES = RombergIntegration.o RecursiveIntegration.o
+EXECUTABLE = RombergIntegration.exe
 
 PROJECT_PATH = $(PROJECT_DIR)
 
@@ -18,4 +18,8 @@ all: Project
 Project: 		$(FILES)
 			$(LINK) $(EXECUTABLE) $(FILES) $(LIBS)
 
+RombergIntegration.o:		RombergIntegration.h RombergIntegration.cpp
+								$(COMPILE) RombergIntegration.cpp
 
+RecursiveIntegration.o:		RecursiveIntegration.h RecursiveIntegration.cpp
+								$(COMPILE) RecursiveIntegration.cpp
