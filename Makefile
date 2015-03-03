@@ -1,7 +1,7 @@
 AutomatedMakefile = am
 CC = g++
 
-FILES = RombergIntegration.o RecursiveIntegration.o
+FILES = RombergIntegration.o RecursiveIntegration.o Problem22_1.o
 EXECUTABLE = RombergIntegration.exe
 
 PROJECT_PATH = $(PROJECT_DIR)
@@ -23,3 +23,6 @@ RombergIntegration.o:		RombergIntegration.h RombergIntegration.cpp
 
 RecursiveIntegration.o:		RecursiveIntegration.h RecursiveIntegration.cpp
 								$(COMPILE) RecursiveIntegration.cpp
+	
+Problem22_1.o:				Problem22_1.h Problem22_1.cpp
+								$(COMPILE) Problem22_1.cpp
